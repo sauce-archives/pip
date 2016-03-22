@@ -1,5 +1,8 @@
 ---
-# file: primogen/defaults/main.yml
+# file: pip/defaults/main.yml
 #
 # defaults file
 #
+
+pip_dir_source: /usr/local/src
+pip_version: 8.1.1

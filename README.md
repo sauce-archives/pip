@@ -1,83 +1,111 @@
-# Role Name
+# pip
 
-[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/ansiblebit/primogen/master/LICENSE)
-[![Build Status](https://travis-ci.org/ansiblebit/primogen.svg?branch=master)](https://travis-ci.org/ansiblebit/primogen)
+[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/saucelabs-ansible/pip/master/LICENSE)
+[![Build Status](https://travis-ci.org/saucelabs-ansible/pip.svg?branch=master)](https://travis-ci.org/saucelabs-ansible/pip)
 
-[![Platform](http://img.shields.io/badge/platform-amazon-ff9900.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-debian-a80030.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-centos-932279.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-fedora-3c6eb4.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-freebsd-ae0000.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-macosx-000000.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-mint-87cfbe.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-opensuse-73ba25.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-redhat-cc0000.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-sles-73ba25.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-smartos-487487.svg?style=flat)](#)
 [![Platform](http://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat)](#)
-[![Platform](http://img.shields.io/badge/platform-windows-004185.svg?style=flat)](#)
 
-[![Project Stats](https://www.openhub.net/p/ansiblebit-primogen/widgets/project_thin_badge.gif)](https://www.openhub.net/p/ansiblebit-primogen/)
+[![Project Stats](https://www.openhub.net/p/saucelabs-ansible-pip/widgets/project_thin_badge.gif)](https://www.openhub.net/p/saucelabs-ansible-pip/)
 
-A brief description of the role goes here.
+Ansible role to install [pip](https://pip.pypa.io/en/stable/).
+
 
 ## Tests
 
 | Family | Distribution | Version | Test Status |
 |:-:|:-:|:-:|:-:|
-| Debian | Debian  | Jessie  | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| Debian | Debian  | Wheezy  | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| Debian | Ubuntu  | Precise | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#)  |
-| Debian | Ubuntu  | Trusty  | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| Debian | Ubuntu  | Vivid   | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| RedHat | CentOS  | 6.4     | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| RedHat | CentOS  | 6.6     | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| RedHat | Centos  | 7       | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| RedHat | Fedora  | 20      | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
-| RedHat | Fedora  | 21      | [![x86](http://img.shields.io/badge/x86-n/a-cccccc.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-n/a-cccccc.svg?style=flat)](#) |
+| Debian | Debian  | Jessie  | [![x86_64](http://img.shields.io/badge/x86_64-unknown-cccccc.svg?style=flat)](#) |
+| Debian | Debian  | Wheezy  | [![x86_64](http://img.shields.io/badge/x86_64-unknown-cccccc.svg?style=flat)](#) |
+| Debian | Ubuntu  | Precise | [![x86](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#)  |
+| Debian | Ubuntu  | Trusty  | [![x86](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
+| Debian | Ubuntu  | Vivid   | [![x86](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
+| RedHat | CentOS  | 6.6     | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
+| RedHat | Centos  | 7       | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
+
 
 ## Requirements
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here.
-For instance, if the role uses the EC2 module,
-it may be a good idea to mention in this section that the boto package is required.
+- ansible >= 1.9.4
 
-- ansible >= 1.7.2
 
 ## Role Variables
 
-A description of the settable variables for this role should go here,
-including any variables that are in defaults/main.yml, vars/main.yml and
-any variables that can/should be set via parameters to the role.
+- **debug**: flag to run debug tasks.
+- **pip_dir_source**: the directory where the installer should be downloaded.
+- **pip_version**: the version to be installed.
 
-Any variables that are read from other roles and/or
-the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+Unless stated otherwise
+a default value is provided for each of the variables mentioned above
+in `defaults/main.yml`.
+
 
 ## Dependencies
 
-A list of other roles hosted on Galaxy should go here,
-plus any details in regards to parameters that may need to be set for other roles
-or variables that are used from other roles.
+None.
+
 
 ## Playbooks
 
-Including an example of how to use your role
-(for instance, with variables passed in as parameters)
-is always nice for users too:
+Example:
 
     - hosts: servers
+      vars:
+        debug: yes
+
       roles:
-         - { role: username.rolename, x: 42 }
+         - role: pip
+           tags: [ pip ]
+
+
+## Tags
+
+- **configuration**: configuration tasks.
+- **debug**: task to debug role variables.
+- **installation**: installation tasks.
+- **validation**: task to validate role variables.
+
+
+## Test
+
+To run the tests you will need to install:
+
+- [tox](https://tox.readthedocs.org/)
+- [vagrant](https://www.vagrantup.com/)
+
+To run all tests against all pre-defined OS/distributions * ansible versions:
+
+```
+$ tox
+```
+
+To run tests for `trusty64`:
+
+```
+$ cd tests
+$ bash test_idempotence.sh --box trusty64.vagrant.dev
+# log file will be stores under tests/log
+```
+
+To perform debugging on a specific environment:
+
+```
+$ cd tests
+$ vagrant up trusty64.vagrant.dev
+
+# to provision using the test.yml playbook (as many time as you need)
+$ vagrant provision trusty64.vagrant.dev
+
+# to access the Vagrant box
+$ vagrant ssh trusty64.vagrant.dev
+```
 
 
 ## Links
 
+- [pip](https://pip.pypa.io/en/stable/)
+- [pip installation](https://pip.pypa.io/en/stable/installing/)
 
-## License
-
-BSD
 
 ## Author Information
 
-An optional section for the role authors to include contact information or
-a website (HTML is not allowed).
+- [steenzout](https://github.com/steenzout/)

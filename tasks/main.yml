@@ -1,9 +1,15 @@
 ---
-# file: primogen/tasks/main.yml
+# file: pip/tasks/main.yml
 #
 # tasks file
 #
 
-- debug: >
-    msg="invoked"
+- include: debug.yml
+  when: debug | default(false)
+  tags: debug
 
+- include: validation.yml
+  tags: validation
+
+- include: installation.yml
+  tags: installation
