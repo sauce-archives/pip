@@ -10,10 +10,6 @@ galaxy_info:
   license: BSD
   min_ansible_version: 1.9.4
   platforms:
-    - name: CentOS
-      versions:
-        - 7
-        - 6
     - name: Debian
       versions:
         - jessie
@@ -26,10 +22,6 @@ galaxy_info:
       versions:
         - 21
         - 20
-    - name: RedHat
-      versions:
-        - 7
-        - 6
     - name: Ubuntu
       versions:
         - all
